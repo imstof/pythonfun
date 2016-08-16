@@ -15,6 +15,7 @@ while iNumber <= 10000:
 	iNumber+=2
 
 #Timestamp here. Start - Stop =
+print ""
 print "It takes %d flops to run the program" % (iFlops)
 
 #Find half of flops
