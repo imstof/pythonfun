@@ -22,3 +22,6 @@ print""
 print"...and I can mix in other variables with index 6(%d). Like subtracting flA(%.1f) to get %.1f!" % ((listA[6]), flA, (listA[6])-flA)
 print""
 print"%d + %.2f - %d = %.2f" % (intA, flA, (listA[7]), intA+flA-(listA[7]))
+intB=1000000
+print""
+#print"Integer formatting? %,1d" % (intB)
