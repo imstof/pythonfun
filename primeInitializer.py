@@ -31,16 +31,21 @@ while iNumber <= 10000:
 	for iCount in range(3,(iNumber/2)):
 
 		iFlops+=1
-		if (iFlops>=iQuarterFlops):
-			print "1/4 of flops occur before: %d" % (iNumber)
-		if (iFlops>=iHalfFlops):
-			print "1/2 of flops occur before: %d" % (iNumber)
+		if (iFlops<=iQuarterFlops):
+			iQuarterNum=iNumber
+		if (iFlops<=iHalfFlops):
+			iHalfNum=iNumber
+		if (iFlops<=i3QuarterFlops):
+			i3QuarterNum=iNumber
 		if (iFlops>=i3QuarterFlops):
-			print "3/4 of flops occur before: %d" % (iNumber)
 			break
 	if (iFlops>=i3QuarterFlops):
 		break
 	iNumber+=2
 	
+print "1/4 of flops occur before: %d" % (iQuarterNum)
+print "1/2 of flops occur before: %d" % (iHalfNum)
+print "3/4 of flops occur before: %d" % (i3QuarterNum)
+
 print""
 print"Dependency complete" 
