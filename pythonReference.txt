@@ -1,0 +1,50 @@
+DECLARE:
+	String:
+		stringname = "blah" OR 'blah'
+	
+	Int:
+		intname = 42
+	Float:
+		floatname = 4.2 OR float(4.2)
+
+	Multiple:
+		fname, iname, sname = 4.2, 42, "forty-two"
+
+	List:
+		listname = [1,2,3]
+		OR
+		lname = []
+		lname.append(1)
+		lname.append(2)
+		lname.append(3)
+
+	Multiplier:
+		sMult = "na " * 10 + "Batman"
+
+PRINT:
+	Normal:
+		print "blah blah blah"
+
+	With variables:
+		print "string %s, int %d, float %.1f" % (sname, iname, fname)
+					 ('.x' is dec places)
+	List index:
+		print(lname[0])
+
+	With operations:
+		print "%d + %.1f = %.1f" % (iname, fname, iname+fname)
+		print(lname[0])+(lname[1])
+		print "%d + %.1f - %d = %d" % (iname, fname, (lname[0]), iname+fname-(lname[0])
+
+	For 'no new line' append print statement with comma
+
+STRING FUNCTIONS:
+	length:
+		len(sName)
+		len(sList[0])
+	count certain char:
+		sName.count("x")
+		sList[0].count("x")
+	slice:
+		[start:stop:step] step can be negative for "reverse"
+		sName[2:9]
