@@ -11,7 +11,7 @@ iFlops=0
 
 #Take argument to set number of divisions
 #Timestamp here
-while iNumber <= 10000:
+while iNumber <= 100000:
 	for iCount in range(3,(iNumber/2)):
 
 		if (iFlops%1000000==0)and(iFlops>0):
@@ -37,7 +37,7 @@ print "3/4: %d" % ((iFlops/4)*3)
 print "7/8: %d" % ((iFlops/8)*7)
 print ""
 iFlops2=0
-while iNumber <= 10000:
+while iNumber <= 100000:
 	for iCount in range(3,(iNumber/2)):
 
 		if (iFlops2<=(iFlops/8)):
