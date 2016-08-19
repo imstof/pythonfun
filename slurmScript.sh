@@ -1,7 +1,7 @@
 #!/bin/bash
 #Try to run python script on slurm
 
-#SBATCH -N1 -n1 --mem-per-cpu=100M -t01:00:00 
+#SBATCH -N1 -n1 --mem-per-cpu=100M
 #SBATCH -J testy
 
 date +"%D-%T"
@@ -11,7 +11,7 @@ echo "I am: `whoami`"
 echo "I am at `pwd`"
 echo ""
 echo ""
-./primeInit.py
+./$1
 echo ""
 echo ""
 echo "Script Complete"
