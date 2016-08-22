@@ -1,0 +1,4 @@
+How to determine resources needed?
+
+X11 job: write one? eek.
+MPI: multiple protocol interface?
