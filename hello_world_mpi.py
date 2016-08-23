@@ -14,4 +14,4 @@ if id == 0:
 	print "HELLO_MPI"
 	print "There are ", p, " MPI processes running
 
-print "Hellow, world, from process ", id, "!"
+print "Hello, world, from process ", id, "!"
