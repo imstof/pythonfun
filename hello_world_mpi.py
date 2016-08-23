@@ -12,6 +12,6 @@ p = comm.Get_size()
 if id == 0:
 	print ""
 	print "HELLO_MPI"
-	print "There are ", p, " MPI processes running
+	print "There are ", p, " MPI processes running"
 
 print "Hellow, world, from process ", id, "!"

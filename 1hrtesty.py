@@ -14,7 +14,7 @@ iFlops=0
 while iNumber <= 100000:
 	for iCount in range(3,(iNumber/2)):
 
-		if (iFlops%10000000==0)and(iFlops>0):
+		if (iFlops%100000000==0)and(iFlops>0):
 			print"Flops so far: %d" % (iFlops)
 		iFlops+=1
 
@@ -25,9 +25,8 @@ while iNumber <= 100000:
 print ""
 print "It takes %d flops to run the program" % (iFlops)
 
-#Find half of flops
+#Find division of flops
 
-iNumber=((iFlops/8)-1)
 print "1/8: %d" % (iFlops/8)
 print "1/4: %d" % (iFlops/4)
 print "3/8: %d" % ((iFlops/8)*3)
@@ -36,6 +35,7 @@ print "5/8: %d" % ((iFlops/8)*5)
 print "3/4: %d" % ((iFlops/4)*3)
 print "7/8: %d" % ((iFlops/8)*7)
 print ""
+iNumber=3
 iFlops2=0
 while iNumber <= 100000:
 	for iCount in range(3,(iNumber/2)):
