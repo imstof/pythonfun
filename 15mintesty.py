@@ -3,14 +3,15 @@
 #evenly distribute the prime number sifter across multiple cores
 
 #import sys
+import time
 
+print "Program started: " + (time.strftime("%m/%d/%y-%I:%M:%S"))
 #pass argument for range?
 #iRange=
 iNumber=3
 iFlops=0
 
 #Take argument to set number of divisions
-#Timestamp here
 while iNumber <= 10000:
 	for iCount in range(3,(iNumber/2)):
 
@@ -35,6 +36,8 @@ print "1/2: %d" % (iFlops/2)
 print "5/8: %d" % ((iFlops/8)*5)
 print "3/4: %d" % ((iFlops/4)*3)
 print "7/8: %d" % ((iFlops/8)*7)
+print ""
+print "The first part of this program completed at: " + (time.strftime("%m/%d/%y-%I:%M:%S")) 
 print ""
 iFlops2=0
 while iNumber <= 10000:
@@ -71,4 +74,4 @@ print "3/4 of flops occur before: %d" % (i3QuarterNum)
 print "7/8 of flops occur before: %d" % (i7_8thNum)
 
 print""
-print"Program Complete" 
+print"Program completed: " + (time.strftime("%m/%d/%y-%I:%M:%S"))

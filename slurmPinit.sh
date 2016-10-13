@@ -13,7 +13,7 @@ domainname
 echo "I am: `whoami`"
 echo "I am at `pwd`"
 echo ""
-./$1
+./home/imstof/testjobs/primeInit.py
 echo ""
 echo "Script Complete"
 date +"%D-%T"

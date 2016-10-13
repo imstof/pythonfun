@@ -7,7 +7,7 @@
 #SBATCH -J testy
 
 echo ""
-date +"%D-%T"
+echo "Submitted to slurm: " $(date +"%D-%T")
 hostname
 domainname
 echo "I am: `whoami`"
@@ -15,5 +15,4 @@ echo "I am at `pwd`"
 echo ""
 ./$1
 echo ""
-echo "Script Complete"
-date +"%D-%T"
+echo "Script completed: " $(date +"%D-%T")

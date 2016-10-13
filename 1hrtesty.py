@@ -3,7 +3,7 @@
 #evenly distribute the prime number sifter across multiple cores
 
 #import sys
-
+import time
 #pass argument for range?
 #iRange=
 iNumber=3
@@ -34,6 +34,8 @@ print "1/2: %d" % (iFlops/2)
 print "5/8: %d" % ((iFlops/8)*5)
 print "3/4: %d" % ((iFlops/4)*3)
 print "7/8: %d" % ((iFlops/8)*7)
+print ""
+print "The first part of this program completed at: " + (time.strftime("%m/%d/%y %I:%M:%S"))
 print ""
 iNumber=3
 iFlops2=0
