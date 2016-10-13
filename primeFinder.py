@@ -6,7 +6,7 @@
 
 iNumber=3
 iPrimes=1
-while iNumber <= 1000000:
+while iNumber <= 100000000:
 
 	bIsPrime=True
 #	print"Number is: %d" % (iNumber)
