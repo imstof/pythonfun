@@ -1,0 +1,2 @@
+sbatch  --reservation=imstof_77 -t 365-00:00:00 -n 64 slurmScript.sh primeFinder.py 
+#SBATCH --reservation=davidcas_deadline
