@@ -3,7 +3,7 @@
 #run hello world from multiple cores
 
 import sys
-from mpi4py import MPI
+from mpiexec import MPI
 
 comm = MPI.COMM_WORLD
 
