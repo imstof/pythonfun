@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/python
 #Attempt at slurm dependencies. This job should determine the best way
 #evenly distribute the prime number sifter across multiple cores
 

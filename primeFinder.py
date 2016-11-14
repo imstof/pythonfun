@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/python
 #Find prime numbers. Test script for cluster/slurm
 
 #	with open("~/primes.txt","a+") as results:
@@ -6,11 +6,8 @@
 
 iNumber=3
 iPrimes=1
-<<<<<<< HEAD
+iCount=0
 while iNumber <= 100000000:
-=======
-while iNumber <= 10000:
->>>>>>> 3ec60372e7cba9bd362c41634dadbd2bf73e7cc2
 
 	bIsPrime=True
 #	print"Number is: %d" % (iNumber)
@@ -23,10 +20,14 @@ while iNumber <= 10000:
 
 	if (bIsPrime==True):
 		iPrimes+=1
+		iCount+=1
 		print""
 		print"%d is a prime number!" % (iNumber)
 	else:
 		print".",
+
+	if (iCount==100):
+		print"Total Primes Found: %d" % (iPrimes)
 
 	iNumber+=2
 
