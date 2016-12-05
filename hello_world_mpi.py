@@ -1,15 +1,15 @@
-#!/usr/bin/env python
+#!/usr/bin/python
 
 import sys
 from mpi4py import MPI
 
 comm = MPI.COMM_WORLD
 
-id = comm.Get_rank()
+pid = comm.Get_rank()
 
 p = comm.Get_size()
 
-if id == 0:
+if pid == 0:
 	print ""
 	print "HELLO_MPI"
 	print "There are ", p, " MPI processes running"
