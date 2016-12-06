@@ -8,6 +8,6 @@ while true
 do
 	for i in $(seq 1 40)
 	do
-		echo "2^2^20" | bc &>/dev/null
+		(time echo "2^2^20" | bc) 1>/dev/null
 	done
 done
