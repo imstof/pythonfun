@@ -15,7 +15,7 @@ while iNumber <= 1000000000:
 			bIsPrime=False
 			break		#break if not prime
 	
-	if (bIsPrime==True):		#
+	if (bIsPrime==True):		
 		iPrimes+=1
 		print""
 		print"%d is prime" % (iNumber)
