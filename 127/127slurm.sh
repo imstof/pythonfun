@@ -1,7 +1,8 @@
 #!/bin/bash
 
 #SBATCH --mem-per-cpu=100M
-#SBATCH --mail-type=ALL
+#SBATCH --mail-type=FAIL
+# #SBATCH -o /dev/null
 #SBATCH --mail-user=cehnstrom@techsquare.com
 # #SBATCH -J cputest
 #SBATCH -w node127
@@ -29,7 +30,7 @@ do
 		endk=$(($endk+24))
 	fi
 
-	if [[ $endk-$startk -ge 11 ]]
+	if [[ $endk-$startk -ge 10 ]]
 	then
 		break
 	fi
