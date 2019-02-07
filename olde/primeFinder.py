@@ -10,7 +10,11 @@ t=timeit.default_timer()
 iNumber=3
 iPrimes=1
 #iCount=0
+<<<<<<< HEAD:olde/primeFinder.py
 while iNumber <= 100000:
+=======
+while iNumber <= 100000000:
+>>>>>>> e34fe888a9a4fb7641cea7079010debef06c98eb:primeFinder.py
 
 	bIsPrime=True
 #	print"Number is: %d" % (iNumber)
