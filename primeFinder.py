@@ -10,7 +10,7 @@ t=timeit.default_timer()
 iNumber=3
 iPrimes=1
 #iCount=0
-while iNumber <= 10000:
+while iNumber <= 100000000:
 
 	bIsPrime=True
 #	print"Number is: %d" % (iNumber)

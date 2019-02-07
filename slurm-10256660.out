@@ -1,0 +1,8 @@
+
+05/15/18-09:39:15
+node023.cm.cluster
+(none)
+I am: imstof
+I am at /home/imstof/testjobs
+
+slurmstepd: error: *** JOB 10256660 ON node023 CANCELLED AT 2018-05-15T09:40:24 ***
