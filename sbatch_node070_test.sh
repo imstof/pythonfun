@@ -3,8 +3,8 @@
 #SBATCH --mem-per-cpu=1000M
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user=cehnstrom@techsquare.com
-#SBATCH --reservation=hippa_reclaim_test
-#SBATCH -p defq
+#SBATCH --reservation=centos7_test
+#SBATCH -p sched_mem1TB_centos7
 #SBATCH -w node070
 
 echo ""
