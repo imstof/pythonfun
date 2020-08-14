@@ -1,9 +1,10 @@
 #!/bin/bash
-#Try to run python script on slurm
 
 #SBATCH --mem-per-cpu=1000M
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user=cehnstrom@techsquare.com
+#SBATCH -p quicktest
+#SBATCH -t 100-0:0:0
 
 echo ""
 date +"%D-%T"
